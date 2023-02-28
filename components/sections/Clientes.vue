@@ -34,7 +34,7 @@
     <div class="container">
       <div class="row">
         <div class="col-10">
-          <h3>Obtiene una cotización</h3>
+          <h3>Solicitar una cotización</h3>
         </div>
         <div class="col-2">
           <a class="btn-style-six">
