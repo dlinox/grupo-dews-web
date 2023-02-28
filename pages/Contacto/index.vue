@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <h1>contacto</h1>
+  <div class="page-contacto">
+    <HeaderPages titulo="Contactanos"></HeaderPages>
   </div>
 </template>

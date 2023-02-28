@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <h1>nosotros</h1>
+  <div class="page-nosotros">
+    <HeaderPages titulo="Nosotros"></HeaderPages>
   </div>
 </template>
