@@ -1,8 +1,10 @@
 <script setup>
 import ServiciosSection from "~/components/sections/ServiciosSection.vue";
 
-const funcion = () =>{
-  console.log('Hola');
+const funcion = async () =>{
+ 
+  let res = await api.get('hola');
+  console.log(res);
 }
 
 funcion();
