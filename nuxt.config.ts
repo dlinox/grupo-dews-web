@@ -16,4 +16,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+  runtimeConfig: {
+    //apiSecret: "123",
+    public: {
+      API_BASE_URL: process.env.API_BASE_URL,
+    },
+  },
 });
