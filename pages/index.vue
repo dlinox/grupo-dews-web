@@ -1,13 +1,23 @@
 <script setup>
+import { ref } from "vue";
 import ServiciosSection from "~/components/sections/ServiciosSection.vue";
 
-const funcion = async () =>{
- 
-  let res = await api.get('hola');
-  console.log(res);
-}
+const datos = ref('');
+
+const funcion = async () => {
+
+  datos.value = await apiFetch("hola");
+
+  console.log(JSON.parse(JSON.stringify(datos.value)));
+
+  console.log(datos.value);
+
+
+};
 
 funcion();
+
+const lino = await apiFetch("hola");
 </script>
 
 <template>
@@ -26,7 +36,10 @@ funcion();
 
     <SectionsAutomoviles></SectionsAutomoviles>
 
-    <SectionsClientes ></SectionsClientes>
+    <SectionsClientes></SectionsClientes>
+
+    <pre>{{ lino.data }}</pre>
+
   </main>
 </template>
 
